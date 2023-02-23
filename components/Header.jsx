@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Head from "next/head";
 import { getCategories } from "@/services";
 
 const Header = () => {
@@ -11,6 +12,10 @@ const Header = () => {
 
   return (
     <div className="container mx-auto px-10 mb-8">
+      <Head>
+        <title>PMTHS Blog</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className="border-b w-full inline-block border-purple-500 py-8">
         <div className="md:float-left block">
           <Link href="/">
