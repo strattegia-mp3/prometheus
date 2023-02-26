@@ -13,7 +13,7 @@ const PostCard = ({ post }) => {
         />
       </div>
       <div className="p-4">
-        <h1 className="transition duration-450 text-center mb-8 cursor-pointer hover:text-pink-600 text-3xl font-semibold">
+        <h1 className="transition duration-450 text-center text-xl mb-8 cursor-pointer hover:text-pink-600 font-semibold min-[600px]:text-2xl sm:text-3xl">
           <Link href={`/post/${post.slug}`}>{post.title}</Link>
         </h1>
         <div className="block lg:flex text-center items-center justify-center mb-8 w-full">
@@ -47,12 +47,12 @@ const PostCard = ({ post }) => {
             <span>{moment(post.createdAt).format("MMM DD, YYYY")}</span>
           </div>
         </div>
-        <p className="text-center text-lg text-gray-700 font-normal px-4 lg:px-20 mb-8">
+        <p className="text-center text-sm text-gray-700 font-normal px-4 lg:px-20 mb-8 min-[600px]:text-base sm:text-lg">
           {post.excerpt}
         </p>
         <div className="text-center">
           <Link href={`/post/${post.slug}`}>
-            <span className="transition duration-450 transform hover:-translate-y-1 inline-block bg-pink-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">
+            <span className="transition duration-450 transform hover:-translate-y-1 inline-block bg-pink-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer max-[316px]:text-sm min-[600px]:text-lg">
               Continue lendo
             </span>
           </Link>
