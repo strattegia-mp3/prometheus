@@ -43,7 +43,7 @@ const FeaturedPosts = () => {
         additionalTransfrom={0}
         arrows
         autoPlay
-        autoPlaySpeed={2500}
+        autoPlaySpeed={4000}
         centerMode={false}
         draggable
         focusOnSelect={false}
